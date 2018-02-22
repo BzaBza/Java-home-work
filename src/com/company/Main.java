@@ -3,10 +3,13 @@ package com.company;
 public class Main {
     public static void main(String[] args) {
         PrimeUser primeUser = new PrimeUser("Prime");
-        primeUser.addComment("Prime comment");
+        primeUser.getComment("Prime comment");
 
         Administrator administrator = new Administrator("Admin");
-        administrator.addComment("admin comment");
-        administrator.numberOfComments();
+        administrator.getComment("admin comment");
+
+        CommentsList commentsList = new CommentsList();
+        commentsList.addComment("NE TO");
+
     }
 }

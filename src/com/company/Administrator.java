@@ -1,8 +1,5 @@
 package com.company;
 
-
-import java.util.ArrayList;
-
 public class Administrator extends User {
 
     private String userName;
@@ -12,12 +9,8 @@ public class Administrator extends User {
     }
 
     @Override
-    public ArrayList<String> addComment(String comment){
-        states.add(comment);
-        return states;
-    }
-    public int numberOfComments (){
-        int howManyComments =  states.size();
-        return howManyComments;
+    public String getComment(String comment) {
+        String myComment = comment + "This is real " + userName;
+        return myComment;
     }
 }
