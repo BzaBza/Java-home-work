@@ -2,10 +2,8 @@ package com.company;
 
 public class Administrator extends User {
 
-    private String userName;
-
-    public Administrator(String userName) {
-        this.userName = userName;
+     Administrator(String userName) {
+        super(userName);
     }
 
     @Override

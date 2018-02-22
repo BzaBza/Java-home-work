@@ -1,7 +1,10 @@
 package com.company;
 
 public abstract class User {
-    public  String getComment(String comment) {
-        return comment;
+    protected String userName;
+    protected User(String userName) {
+        this.userName = userName;
     }
+    public abstract String getComment(String comment);
+
 }
