@@ -10,5 +10,6 @@ public class Main {
 
         Comments comments = new Comments();
         comments.addComment(primeComment);
+        comments.removeComment(primeComment);
     }
 }

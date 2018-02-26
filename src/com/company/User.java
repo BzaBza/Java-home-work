@@ -5,6 +5,8 @@ public abstract class User {
     protected User(String userName) {
         this.userName = userName;
     }
-    public abstract String getComment(String comment);
-
+    public String getComment(String comment){
+        String myComment = comment + "default comment";
+        return myComment;
+    }
 }
