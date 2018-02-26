@@ -2,14 +2,11 @@ package com.company;
 
 public class Main {
     public static void main(String[] args) {
-        PrimeUser primeUser = new PrimeUser("Prime");
-        String primeComment = primeUser.getComment("Prime comment");
-
-        Administrator administrator = new Administrator("Admin");
-        administrator.getComment("admin comment");
+        User user = new PrimeUser("Grisha");
+        String comment = user.getComment("comment");
 
         Comments comments = new Comments();
-        comments.addComment(primeComment);
-        comments.removeComment(primeComment);
+        comments.addComment(comment);
+        comments.removeComment(comment);
     }
 }

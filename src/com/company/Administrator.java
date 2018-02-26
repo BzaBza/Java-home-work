@@ -6,8 +6,9 @@ public class Administrator extends User {
         super(userName);
     }
 
+    @Override
     public String getComment(String comment) {
-        String myComment = comment + "This is real " + userName;
+        String myComment = this.userName + ": " + "This is real Admin "+ comment + " ";
         return myComment;
     }
 }

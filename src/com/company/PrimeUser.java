@@ -6,8 +6,9 @@ public class PrimeUser extends User {
         super(userName);
     }
 
+    @Override
     public String getComment(String comment) {
-        String myComment = comment + "This is real prime" + userName ;
+        String myComment = this.userName + ": " + "This is prime " + comment + " ";
         return myComment;
     }
 }
